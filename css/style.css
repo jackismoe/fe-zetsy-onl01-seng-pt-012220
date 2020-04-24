@@ -1,13 +1,46 @@
 /*////////////// Fonts //////////////*/
 
 /* link the web font used for the level 1 heading here */
-
+@font-face {
+	font-family: 'Baskerville';
+	src: url(../fonts/Baskerville.ttc);
+}
 /*////////// Global Styles //////////*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
 
 body {
 	background: #F3EBE9;
 	font-size: 100%;
 	font-family: 'Times New Roman', serif; 
+}
+
+h1 {
+	border-bottom: 1px solid rgb(190, 190, 190);
+	margin: 0 0 5px;
+	padding-bottom: 10px;
+	color: rgb(135, 157, 149);
+	font-size: 5em;
+	font-weight: normal;
+	font-family: 'Baskerville', serif;
+}
+
+h2 {
+	color: rgb(135, 157, 149);
+	font-size: 2em;
+}
+
+p {
+	color: rgb(76, 76, 76);
+	font-size: 1em;
+	margin: 0 0 20px 0;
+}
+
+.small {
+	font-size: .08em;
 }
 
 .wrapper {
@@ -18,3 +51,46 @@ body {
 }
 
 /* Write all remaining styles here */
+
+h1 a {
+	color: rgb(135, 157, 149);
+	text-decoration: none;
+}
+
+h1 a:hover {
+	color: rgb(92, 108, 103);
+}
+
+.info img {
+	border: 5px rgb(135, 157, 149) solid;
+}
+
+.info a {
+	color: rgb(53, 128, 184);
+	text-decoration: none;
+}
+
+.info a:hover {
+	text-decoration: underline;
+}
+
+.press {
+	margin-bottom: 20px;
+}
+
+.press img {
+	border: 5px rgb(193, 193, 193) solid;
+	padding: 1px;
+}
+
+.press img:hover {
+	border: 5px rgb(135, 157, 149) solid;
+}
+
+footer {
+	text-align: right;
+	background: rgb(255, 255, 255);
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 45px 20px;
+}
